@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.header{
+  height: rem(60);
+  // position: fixed;
+  position: relative;
+  width: 100%;
+  z-index: 7777;
+  @include mq("md") {
+    height: rem(100);
+  }
+}
+.header_inner{
+  padding: 0 rem(20);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  
+}
+.header__logo{
+  height: inherit;
+  align-items: center;
+}
+.header__buttons{
+  text-align: center;
+  padding-top: rem(100);
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+  }
+}
+.header__button{
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: 0;
+  }
+
+}
+.header__button:not(:first-of-type){
+  margin-left: rem(12);
+  @include mq("md") {
+    
+  }
+}
+.header__menus{
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+
+}

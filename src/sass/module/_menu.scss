@@ -1,0 +1,44 @@
+@use "global" as *;
+.menu{
+  text-align: center;
+  padding-top: rem(100);
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    height: inherit;
+  }
+
+}
+.menu__items{
+  color: $dark-orange;
+  text-transform:capitalize;
+  margin-right: rem(29);
+  @include mq("md") {
+    color: $black;
+    display: flex;
+    align-items: center;
+    height: inherit;
+  }
+}
+.menu__item{
+  @include mq("md") {
+    height: inherit;
+  }
+}
+.menu__item:not(:first-of-type){
+  margin-left: rem(29);
+}
+.menu__item a{
+  padding: rem(20);
+  display: block;
+  width: 100%;
+  @include mq("md") {
+    padding: 0;
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.button{
+}
+.button__link{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+.button__link--orange{
+  background: $orange;
+  color: $white;
+  padding: rem(16);
+  min-width: rem(180);
+  font-size: rem(13);
+  border-radius: 30px;
+}
+.button__link--dark-orange{
+  background: $dark-orange;
+  color: $white;
+  padding: rem(16);
+  min-width: rem(180);
+  font-size: rem(13);
+  border-radius: 30px;
+}
+.button__link--arrow{
+  padding: rem(29);
+  font-weight: bold;
+  min-width: rem(330);
+  font-size: rem(18);
+  font-weight: bold;
+  border-radius: 42px;
+}
+.button__link--arrow::after{
+  content: '';
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+  background-repeat: no-repeat;
+  background-size: contain;
+  // vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  right: rem(42);
+  transform: translateY(-50%);
+  background-image: url('../images/common/arrow-white.png');
+}
+.button__link--arrow-border{
+  color: $white;
+  border: 4px solid $white;
+
+}
+.button__link--arrow--dark-orange{
+  color: $white;
+  background: $dark-orange;
+}

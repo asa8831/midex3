@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.footer__lower{
+  padding: rem(49) rem(20);
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer__lower__logo{
+  margin-bottom: rem(20);
+  @include mq("md") {
+    margin-bottom: 0;
+  }
+}
+
+.footer__lower__copy{
+  font-size: rem(10);
+}

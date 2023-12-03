@@ -1,49 +1,131 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="noindex" />
-  <!-- meta情報 -->
-  <title>CodeUps</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- フォント -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>CodeUps</title>
+    <meta name="description" content />
+    <meta name="keywords" content />
+    <!-- ogp -->
+    <meta property="og:title" content />
+    <meta property="og:type" content />
+    <meta property="og:url" content />
+    <meta property="og:image" content />
+    <meta property="og:site_name" content />
+    <meta property="og:description" content />
+    <!-- ファビコン -->
+    <link rel="”icon”" href />
+    <!-- フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
-    rel="stylesheet">
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./assets/js/script.js"></script>
-</head>
-<body>
-  <header>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_inner">
+        <a class="header__logo logo" href="">
+          
+          <div class="logo__img">
+            <img src="./assets/images/common/logo-orange.svg" alt="ロゴ">
+          </div>
+          <h1 class="logo__text">
+            <p class="logo__site">新卒採用サイト</p>
+            <p class="logo__company">igatta group</p>
+          </h1>
+        </a>
 
-  </header>
-  <main>
-    <div class="inner">
-      <p class="test">のテスト</p>
-    </div>
-  </main>
-  <footer>
-    <div class="footer__inner">
+        <div class="menus js-drawer-menu">
+          <nav class="menus__item menu">
+            <ul class="menu__items">
+              <li class="menu__item">
+                <a href class>mission & vision</a>
+              </li>
+              <li class="menu__item">
+                <a href class>message</a>
+              </li>
+              <li class="menu__item">
+                <a href class>job jist</a>
+              </li>
+            </ul>
+          </nav>
 
-    </div>
-  </footer>
-</body>
+          <div class="header__buttons">
+            <div class="button header__button">
+              <a href class="button__link button__link--orange">MY PAGEはこちら</a>
+            </div>
+            <div class="button header__button">
+              <a href class="button__link button__link--dark-orange">エントリーはこちら</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="inner">
+
+        <div class="button">
+          <a href
+            class="button__link button__link--arrow button__link--arrow--dark-orange">エントリー</a>
+        </div>
+        
+        <div class="section__title top-mission__title">
+          <div class="section__title__sub top-mission__title__sub">
+            <img src="./assets/images/common/titile-mission-vision.png" alt="mission">
+          </div>
+          <h2 class="section__title__main">igatta groupの<br class="u-mobile">ミッション・ビジョン</h2>
+        </div>
+
+
+
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__upper">
+          <div class="footer__upper__logo"><img
+              src="./assets/images/common/logo-white.png" alt="ロゴ"></div>
+          <div class="footer__upper__title">熱い気持ちを<br class="u-mobile">持った方、<br
+              class="u-mobile">募集しています。</div>
+          <p class="footer__upper__text">まずはカジュアルランチから。皆様の就活の思い、悩みの相談に乗ります。<br>また弊社のオフィスツアー・社員との座談会も行います。<br>価値観が会えば、面接に起こしいただけると幸いです</p>
+          <div class="button footer__upper__button">
+            <a href
+              class="button__link button__link--arrow button__link--arrow-border">エントリーはこちら</a>
+          </div>
+        </div>
+        <div class="footer__lower">
+          <div class="footer__lower__logo logo">
+            <div class="logo__img">
+              <img src="./assets/images/common/logo-orange.svg" alt="ロゴ">
+            </div>
+            <div class="logo__text">
+              <p class="logo__site">新卒採用サイト</p>
+              <p class="logo__company">igatta group</p>
+            </div>
+          </div>
+
+          <div class="footer__lower__copy">
+            Copyright© IGATTA GROUP co.,Ltd. All Rights Reserved.
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </body>
 
 </html>

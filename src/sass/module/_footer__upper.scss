@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.footer__upper{
+  color: $white;
+  background-image: url('../images/common/footer.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: rem(84) rem(20) rem(66) rem(20);
+ 
+  @include mq("md") {
+  }
+}
+.footer__upper__logo{
+  text-align: center;
+  display: block;
+  margin-bottom: rem(20);
+}
+.footer__upper__logo img{
+  width: rem(49);
+  display: inline-block;
+}
+.footer__upper__title{
+  text-align: center;
+  font-size: rem(35);
+  margin-bottom: rem(21);
+  @include mq("md") {
+    font-size: rem(42);
+  }
+}
+.footer__upper__text{
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: rem(48);
+  @include mq("md") {
+    text-align: center;
+  }
+}
+.footer__upper__button{
+  text-align: center;
+
+}
+

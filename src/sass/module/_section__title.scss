@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.section__title {
+  text-transform:capitalize;
+  text-align: center;
+  @include mq("md") {
+    
+  }
+}
+.section__title__sub {
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(9);
+  @include mq("md") {
+    
+  }
+}
+.section__title__main {
+  font-size: rem(30);
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}

@@ -1,0 +1,16 @@
+@use "global" as *;
+.logo{
+  display: flex;
+  color: $dark-orange;
+  font-weight: bold;
+}
+.logo__text{
+  margin-left: rem(14);
+}
+.logo__site{
+  font-size: rem(12);
+}
+.logo__company{
+  text-transform:capitalize;
+  font-size: rem(20);
+}

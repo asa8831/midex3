@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.menus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 8888;
+  background: $white;
+  height: 100vh;
+  // overflow: scroll;
+  @include mq("md") {
+    background: none;
+    position: static;
+    height: inherit;
+    width: auto;
+    display: flex;
+    align-items: center;
+    
+  }
+}
