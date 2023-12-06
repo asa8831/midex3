@@ -2,8 +2,8 @@
 
 .header{
   height: rem(60);
-  // position: fixed;
-  position: relative;
+  position: fixed;
+  // position: relative;
   width: 100%;
   z-index: 7777;
   @include mq("md") {

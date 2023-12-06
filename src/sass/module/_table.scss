@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.table{
+  line-height: 2.0;
+  border: 1px solid $table-border;
+  @include mq("md") {
+    border: none;
+  }
+}
+.table__item{
+  background: $table-header;
+  @include mq("md") {
+    border-top: 1px solid $table-border;
+    border-bottom: 1px solid $table-border;
+    display: flex;
+    align-items: center;
+  }
+}
+.table__title{
+  width: 100%;
+  font-size: rem(14);
+  font-weight: bold;
+  padding: rem(20);
+  @include mq("md") {
+    width: rem(200);
+    padding: rem(40);
+  }
+}
+.table__detail{
+  width: 100%;
+  font-size: rem(14);
+  padding: rem(20);
+  background: $white;
+  @include mq("md") {
+    width: calc(100% - rem(200));
+    padding: rem(40);
+  }
+}
+.table__bold-title{
+  font-weight: bold;
+
+}

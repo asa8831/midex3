@@ -1,1 +1,11 @@
 @use "global" as *;
+.job__type__inner{
+
+}
+.job-type__description{
+  text-align: left;
+
+  @include mq("md") {
+    text-align: center;
+  }
+}

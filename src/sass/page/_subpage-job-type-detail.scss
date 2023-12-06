@@ -1,0 +1,10 @@
+@use "global" as *;
+.subpage-job-type-detail{
+  
+  
+  margin-bottom: rem(100);
+  @include mq("md") {
+    margin-bottom: rem(188);
+
+  }
+}

@@ -11,6 +11,7 @@
   background: $white;
   height: 100vh;
   // overflow: scroll;
+  display: none;
   @include mq("md") {
     background: none;
     position: static;

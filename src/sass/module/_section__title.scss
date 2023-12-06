@@ -15,10 +15,24 @@
     
   }
 }
+.section__title__sub--orange{
+  font-size: rem(14);
+  color: $orange;
+
+
+}
 .section__title__main {
   font-size: rem(30);
   font-weight: bold;
   @include mq("md") {
     font-size: rem(40);
+  }
+}
+.section__title__main--white{
+  font-size: rem(30);
+  color: $white;
+  font-weight: normal;
+  @include mq("md") {
+  font-size: rem(42);
   }
 }

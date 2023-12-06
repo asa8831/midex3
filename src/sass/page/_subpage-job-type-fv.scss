@@ -1,0 +1,9 @@
+@use "global" as *;
+.subpage-job-type-fv{
+  padding-top: rem(60);
+  margin-bottom: rem(75);
+  @include mq("md") {
+    padding-top: rem(100);
+
+  }
+}

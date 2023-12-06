@@ -1,0 +1,21 @@
+@use "global" as *;
+.job-type-fv{
+  
+  @include mq("md") {
+    // padding-top: rem(313);
+    padding-bottom: rem(83);
+  }
+}
+.job-type-fv__img{
+  background-image: url('../images/common/subpage-derectore.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  aspect-ratio: 1240/435;
+
+
+}
+.job-type__description{
+  background: #E9DBB5;
+
+}

@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.card {
+  width: 100%;
+  list-style: none;
+  @include mq("md") {
+  }
+}
+
+.card__img {
+  position: relative;
+  width: 96%;
+  @include mq("md") {
+    max-width: rem(431);
+    width: 100%;
+  }
+}
+.card__img::before {
+  // 写真の比率管理
+  content: "";
+  display: block;
+  padding-top: calc(267 / 431) * 100%;
+}
+.card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__description {
+  width: 96%;
+  margin-top: rem(-78);
+  position: relative;
+  margin-left: rem(20);
+  @include mq("md") {
+    max-width: rem(431);
+    width: 100%;
+  }
+}
+.card__title {
+  color: $white;
+  font-size: rem(12);
+  text-transform: uppercase;
+  padding: rem(4) rem(17);
+  background: $black;
+  display: inline-block;
+}
+.card__detail {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+  padding: rem(20) rem(17);
+  position: relative;
+  background: $white;
+  display: flex;
+  align-items: center;
+  @include mq("md") {
+    min-height: rem(99);
+  }
+}
+.card__detail::after {
+  content: "";
+  display: inline-block;
+  width: rem(13);
+  height: rem(13);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: rem(20);
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../images/common/arrow-orange.png");
+  @include mq("md") {
+    right: rem(43);
+  }
+}
+.card__text {
+  width: rem(250);
+  max-width: 100%;
+  font-size: rem(12);
+  line-height: 1.7;
+  @include mq("md") {
+    width: rem(305);
+  }
+}
+.card__icon {
+  width: rem(13);
+  max-width: 100%;
+}

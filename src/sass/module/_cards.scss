@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  @include mq("md") {
+    max-width: rem(980);
+    width: 100%;
+    margin: 0 auto;
+    // gap: rem(78);
+  }
+}
+.cards__item{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  @include mq("md") {
+    max-width : calc(100% / 2 - rem(58));
+    // ↑こう書くと、全体から間のマージン 
+    width: 100%;
+  }
+}
+.cards__item:nth-of-type(even){
+  @include mq("md") {
+  margin-left: rem(98);
+  }
+}
+.cards__item:not(:first-of-type){
+  margin-top: rem(88);
+
+}
+.cards__item:not(:nth-of-type(2)) {
+  @include mq("md") {
+  margin-top: rem(88);
+  }
+
+}
